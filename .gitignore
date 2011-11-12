@@ -1,3 +1,5 @@
 database/sqlite.db
+public/css/all.css
+public/js/all.js
 logs/*
 tmp/*
