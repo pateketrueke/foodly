@@ -1,6 +1,6 @@
 <?php
 
-$config['rewrite'] = 0;
+$config['rewrite'] = 1;
 
 #$config['temporary_files'] = dirname(__DIR__).DS.'tmp';
 
