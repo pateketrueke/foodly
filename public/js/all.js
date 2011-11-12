@@ -1,4 +1,4 @@
-/* 2011-11-12 00:28:09 ./views/assets/js/lib/jquery-ujs.js */
+/* 2011-11-12 06:28:09 ./foodly/views/assets/js/lib/jquery-ujs.js */
 (function($, undefined) {
 
   $ujs = {
