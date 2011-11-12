@@ -1,0 +1,16 @@
+button { id => 'show' }
+  Show?
+#register
+  a { id => 'close_x', class => 'close sprited', href => '#register' }
+    (X)
+  <a id="close_x" class="close sprited" href="#">close</a>
+  :form url_for::save_venue() { method => PUT, remote => TRUE, type => 'json', id => 'venue' }
+    = form::field(array(type => 'text', name => 'title', label => 'Titulo'))
+    = form::field(array(type => 'textarea', name => 'desc'))
+    = html::div('', '#map@style=width:400px;height:260px')
+    = html::input(array(type => 'text', placeholder => 'Ciudad de México, Tacubaya, Mixquic', id => 'search'))
+    = html::input(array(type => 'button', id => 'find', value => 'Buscar'))
+    = form::field(array(type => 'text', name => 'from', label => 'Desde'), array(type => 'text', name => 'up', label => 'Hasta'))
+    = form::field(array(type => 'text', name => 'tel', label => 'Tel.'))
+    = form::hidden('lat'), form::hidden('lng')
+    = form::submit('done', 'OK')

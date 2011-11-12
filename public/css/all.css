@@ -1,4 +1,4 @@
-/* 2011-11-12 06:28:09 ./foodly/views/assets/css/base.css */
+/* 2011-11-12 21:08:33 ./foodly/views/assets/css/base.css */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,
 blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q,
 samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset,
@@ -14,8 +14,7 @@ hgroup, menu, nav, section, summary, time, mark, audio, video {
  background: transparent;
 }
 body {
- background: #f9f9f7;
- font-family: Corbel,'Lucida Grande','Lucida Sans Unicode','Lucida Sans','DejaVu Sans','Bitstream Vera Sans','Liberation Sans',Verdana,'Verdana Ref',sans-serif;
+ line-height: 1;
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu,
 nav, section {
@@ -90,39 +89,16 @@ html {
 img {
  -ms-interpolation-mode: bicubic;
 }
-#wrapper > header {
- text-transform: uppercase;
- font-family: Bangers,sans-serif;
- font-size: 1.9em;
-}
-#wrapper > section > header {
- font-weight: bold;
- margin-bottom: .5em;
- padding-bottom: .5em;
- border-bottom: 1px solid #ededed;
-}
-#wrapper > section > pre {
- color: #6f6f6f;
-}
-#wrapper > section {
- padding: .8em;
- background: #f4f4f4;
- border: 1px solid #ededed;
-}
-#wrapper > footer {
- text-align: right;
- font-size: .9em;
- color: #bfbfbf;
-}
-#wrapper {
- margin: 33px auto 0 auto;
- width: 640px;
-}
-#wrapper > section {
- -moz-border-radius: 7px;
- -webkit-border-radius: 7px;
- border-radius: 7px;
+#register {
+ background: silver;
+ display: none;
+ -moz-border-radius: 5px;
+ -webkit-border-radius: 5px;
+ border-radius: 5px;
  -moz-background-clip: padding;
  -webkit-background-clip: padding-box;
  background-clip: padding-box;
+ -moz-box-shadow: 0 0 5px #555;
+ -webkit-box-shadow: 0 0 5px #555;
+ box-shadow: 0 0 5px #555;
 }
