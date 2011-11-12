@@ -191,9 +191,9 @@ class assets extends prototype
           write($static_file, $output);
         }
 
-        dispatch($static_file, array(
-          'type' => mime($method),
-        ));
+        header('Content-Type: ' . mime($method));
+        readfile($static_file);
+        exit;
       break;
       default;
         raise(ln('method_missing', array('class' => get_called_class(), 'name' => $method)));
