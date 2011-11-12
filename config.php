@@ -6,5 +6,3 @@ chdir(__DIR__);
 # $config['language'] = 'en';
 # $config['timezone'] = 'UTC';
 # $config['temporary_files'] = __DIR__.DS.'tmp';
-
-$config['environment'] = 'development';
