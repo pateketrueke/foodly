@@ -39,8 +39,8 @@
   </div>
 
 <footer>
-  <a id="twitter" href="http://twitter.com/FoodlyMX"><span>@FoodlyMX</span></a>
-  <a id="facebook" href="http://facebook.com/FoodlyMX"><span>FoodlyMX</span></a>
+  <a id="twitter" href="http://twitter.com/FoodlyMX">@FoodlyMX</a>
+  <a id="facebook" href="http://facebook.com/FoodlyMX">FoodlyMX</a>
 <footer>
 
 <div id="fb-root"></div>

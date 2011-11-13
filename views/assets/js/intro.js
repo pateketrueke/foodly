@@ -56,9 +56,7 @@ $(function() {
     console.log(current, steps.size());
 
     if (current === (steps.size() - 1)) {
-      $('#next').fadeOut(function() {
-        $('#addr').focus();
-      });
+      $('#next').fadeOut();
     }
 
     var li = steps.eq(current).fadeIn(),
