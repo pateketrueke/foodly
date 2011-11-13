@@ -1,6 +1,6 @@
 <?php
 /* 2011-11-13 07:19:39 */
-create_table('establishments', array(
+/*create_table('establishments', array(
                                  'title' => array('string', 255),
                                  'short_desc' => array('text'),
                                  'lat_coord' => array('string', 255),
@@ -9,7 +9,7 @@ create_table('establishments', array(
                                  'max_range' => array('integer'),
                                  'tel_number' => array('string', 255),
                                  'id' => array('primary_key'),
-                               ), array('force' => TRUE));
+                               ), array('force' => TRUE));*/
 
 
 create_table('costumers', array(

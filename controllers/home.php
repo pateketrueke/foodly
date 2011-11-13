@@ -6,6 +6,12 @@ class home_controller extends base_controller
   public static function index() {
     import('form');
     import('html');
+
+    if (request::get('migrate')) {
+    import('db');
+    require getcwd().DS.'database'.DS.'schema'.EXT;
+      redirect();
+    }
   }
 
   public static function venues() {
