@@ -4,11 +4,14 @@
     img { src => path_to('public/img/cerrar.png') }
   ul
     li
-      Bienvenido, sabemos que ésta es tu ubicación actual ¿Estás listo?
+      h3 Bienvenido 
+      p Sabemos que ésta es tu ubicación actual ¿Estás listo?
     li { data => array(lat => '19.3872761', lng => '-99.25227710000001', zoom => 13) }
-      Aquí puedes descubrir las opciones cercanas a ti para comer sin desplazarte de tu lugar.
+      h3 Aquí puedes
+      p Descubrir las opciones cercanas a ti para comer sin desplazarte de tu lugar.
     li { data => array(lat => '19.3894926', lng => '-99.260309') }
-      Selecciona la opción que más te agrade y realiza tu pedido de inmediato.
+      h3 Selecciona 
+      p la opción que más te agrade y realiza tu pedido de inmediato.
     li { data => array(lat => '19.3891928', lng => '-99.2617318') }
       :form url_for::sign_up() { method => PUT, remote => TRUE, type => 'json', id => 'sign' }
         = html::h3('¿Mucha hambre y poco tiempo?')
