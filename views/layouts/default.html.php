@@ -20,11 +20,14 @@
   </head>
   <body>
   <div id="wrapper">
-    <header>
-    	<img alt="<?php echo $title; ?>" src="<?php echo path_to('public/img/logo.png'); ?>">
-      <div id="join_us">
-      	<h2>Directorio de Lugares para ordenar por Internet</h2>
-        <a id="show" href="#show">Registra tu establecimienmto</a>
+    <header>    	
+    	<img id="logo" alt="<?php echo $title; ?>" src="<?php echo path_to('public/img/logo.png'); ?>">
+      <div id="globo">
+		  <div id="join_us">
+		  	<h2>¿Mucha hambre y poco tiempo?</h2>
+		    <h3>Averigua una nueva forma de pedir comida a domicilio</h3>        
+		  </div>
+      <img id="triangulo" alt="<?php echo $title; ?>" src="<?php echo path_to('public/img/triangulo.png'); ?>">
       </div>
   </header>
 <?php echo $body; ?>
@@ -39,6 +42,8 @@
 <div id="fb-root"></div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
     <script>window.jQuery || document.write("<script src='<?php echo assets::url_for('jquery-1.5.1.min.js'); ?>'>\x3C/script>")</script>
+    <link href='http://fonts.googleapis.com/css?family=Paytone+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Rancho' rel='stylesheet' type='text/css'>
     <script src="//maps.google.com/maps/api/js?sensor=false"></script>
 <?php echo assets::after(); ?>
 
