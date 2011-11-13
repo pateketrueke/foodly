@@ -34,10 +34,10 @@
 <!-- <?php echo ticks(BEGIN); ?>s -->
   </div>
 
-<div id="social">
-  <a href="http://twitter.com/FoodlyMX">@FoodlyMX</a>
-  <div class="fb-like" data-href="http://foodly.mx/" data-send="false" data-width="450" data-show-faces="false"></div>
-</div>
+<footer>	
+  <a id="twitter" href="http://twitter.com/FoodlyMX">LOL</a> 
+  <a id="facebook" href="http://facebook.com/FoodlyMX">  
+</footer>
 
 <div id="fb-root"></div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
