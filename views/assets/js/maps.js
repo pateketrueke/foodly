@@ -3,7 +3,7 @@ var marker;
 var map;
 
 function mark(lat, lng) {
-  marker.setPosition(new google.maps.LatLng(lat, lng));
+  //marker.setPosition(new google.maps.LatLng(lat, lng));
 }
 
 function initialize(lat, lng) {

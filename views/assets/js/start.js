@@ -4,8 +4,8 @@ $(function() {
     $('#register').lightbox_me({
       centered: true,
       onLoad: function() {
-          initialize(40.396764, -3.713379);
-          mark(19.431900, -99.132851);
+          initialize(19.3586982, -99.2596767);
+          //mark(19.431900, -99.132851);
         }
       });
     e.preventDefault();
@@ -23,8 +23,9 @@ $(function() {
     check();
   });
 
-  function start_canvas(position) {
-    var latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+  function start_canvas(lat, lng) {
+    // position.coords.latitude, position.coords.longitude
+    var latlng = new google.maps.LatLng(lat, lng);
     var myOptions = {
       zoom: 15,
       center: latlng,
@@ -33,20 +34,22 @@ $(function() {
       mapTypeId: google.maps.MapTypeId.ROADMAP
     };
 
-    var map = new google.maps.Map(document.getElementById('canvas'), myOptions);
-    var marker = new google.maps.Marker({
+    map = new google.maps.Map(document.getElementById('canvas'), myOptions);
+    marker = new google.maps.Marker({
         position: latlng,
         map: map,
         title: "Tu est\u00e1s aqu\u00ed!"
     });
   }
 
-  if (navigator.geolocation) {
+  /*if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(start_canvas, function() {
       console.log(arguments);
     });
   } else {
     //$('#list').fadeIn();
-  }
+  }*/
+
+  start_canvas(19.3586982, -99.2596767);
 
 });

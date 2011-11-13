@@ -3,4 +3,5 @@
  *= lib/jquery-lightbox_me
  *= maps
  *= start
+ *= intro
  */
