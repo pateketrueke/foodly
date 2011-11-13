@@ -2,7 +2,7 @@
 @use 'base'
 @use 'css3'
 
-body{	
+body{
 	background-color:#ffb948;
 }
 
@@ -14,7 +14,7 @@ body{
   display: none;
 }
 
-header {	
+header {
   	height: 140px;
 }
 #logo{
@@ -22,21 +22,21 @@ header {
 	margin-top:4px;
 }
 #globo{
-	float:right;	
+	float:right;
 	margin-right:13px;
 	margin-top:45px;
 	position: relative;
 }
 #join_us{
-	background-color:#ff6700;	
+	background-color:#ff6700;
 }
 
 #join_us h2{
-	font-family: 'Paytone One', sans-serif;	
+	font-family: 'Paytone One', sans-serif;
 	font-size:22px;
 	color:#fff;
 	padding:10px 30px 0px 30px;
-	text-shadow: 3px 3px 10px #ff0000;	
+	text-shadow: 3px 3px 10px #ff0000;
 }
 
 #join_us h3{
@@ -45,7 +45,7 @@ header {
 	color:#ffb948;
 	text-align:center;
 	padding:0px 0px 10px 0px;
-}	
+}
 #triangulo{
 	position: absolute;
 	left: 45%;
@@ -59,17 +59,15 @@ header {
 
 #canvas {
   width: 98%;
-  height: 480px !important;
+  height: 420px !important;
   margin-left:10px;
   margin-top:5px;
-  -webkit-box-shadow: 0px 0px 15px 1px ; 
-  -moz-box-shadow: 0px 0px 15px 1px red#ff6700; 
-  box-shadow: 0px 0px 15px 1px #ff6700;
+  @include shadow(0, 0, 15, #ff6700);
 }
 
 
 #display {
-  @include radius;
+  @include radius(15);
   position: relative;
   background: rgba(#FF6600, .8);
   position: absolute;
@@ -79,11 +77,11 @@ header {
   width: 360px;
   height: 110px;
   display: none;
-  padding: 10px;
   ul {
     margin-top: 24px;
     li {
       display: none;
+      padding: .5em 1em;
       position: absolute;
       list-style-type: none;
     }
