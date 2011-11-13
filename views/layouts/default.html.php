@@ -29,6 +29,10 @@
 		  </div>
       <img id="triangulo" alt="<?php echo $title; ?>" src="<?php echo path_to('public/img/triangulo.png'); ?>">
     </div>
+    <form action="#locate" id="locate">
+      <div><input type="text" id="query" placeholder="Acopilco Cuajimalpa, Ciudad de México, Tlalpan">
+      <input type="submit" value="Buscar" id="go"></div>
+  </form>
   </header>
 <?php echo $body; ?>
 <!-- <?php echo ticks(BEGIN); ?>s -->
