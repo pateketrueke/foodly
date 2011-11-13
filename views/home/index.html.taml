@@ -14,9 +14,8 @@
       p la opción que más te agrade y realiza tu pedido de inmediato.
     li { data => array(lat => '19.3891928', lng => '-99.2617318') }
       :form url_for::sign_up() { method => PUT, remote => TRUE, type => 'json', id => 'sign' }
-        = html::h3('¿Mucha hambre y poco tiempo?')
-        = form::email('addr'), form::submit('done', 'OK')
-        = html::p('Averigua una nueva forma de pedir comida a domicilio')
+        = html::h3('Averigua una nueva forma de pedir comida a domicilio')
+        = form::email('addr'), form::submit('done', 'OK')        
         .fb-like { data => array(href => 'http://foodlyapp.com/', send => 'false', width => 80, show-faces => 'false', layout => 'button_count') }
   a#next { href => '#next' }
     img { src => path_to('public/img/siguiente.png') }
