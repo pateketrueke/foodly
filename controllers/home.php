@@ -8,6 +8,25 @@ class home_controller extends base_controller
     import('html');
   }
 
+  public static function venues() {
+    import('cache');
+    import('php-foursquare');
+
+    $at = request::get('at');
+    $hash = md5($at);
+
+    if ( ! ($cached = cache::get($hash))) {
+      $cached = api_4sq($at, 'venues/search', array(
+        'query' => 'food',
+      ));
+      cache::set($hash, $cached, 300);
+    }
+
+    return array(200, $cached, array(
+      'content-type' => 'application/json',
+    ));
+  }
+
   public static function verify()
   {
     $data = request::post();

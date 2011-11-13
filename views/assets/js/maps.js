@@ -1,13 +1,21 @@
-var geocoder;
+var geocoder = new google.maps.Geocoder();
+
+var origin;
 var marker;
 var map;
 
-function mark(lat, lng) {
-  //marker.setPosition(new google.maps.LatLng(lat, lng));
+
+function clear_marks() {
+  marker.setMap(null);
+  delete marker;
+
+  for (var i in $.list) {
+    $.list[i].setMap(null);
+    delete $.list[i];
+  }
 }
 
 function initialize(lat, lng) {
-  geocoder = new google.maps.Geocoder();
   var latlng = new google.maps.LatLng(lat, lng);
   var myOptions = {
     zoom: 17,

@@ -5,9 +5,9 @@
   ul
     li
       Bienvenido, sabemos que ésta es tu ubicación actual ¿Estás listo?
-    li { data => array(lat => '19.3872761', lng => '-99.25227710000001', zoom => 13) }
+    li { data => array(lat => '19.3872761', lng => '-99.25227710000001') }
       Aquí puedes descubrir las opciones cercanas a ti para comer sin desplazarte de tu lugar.
-    li { data => array(lat => '19.3894926', lng => '-99.260309') }
+    li { data => array(lat => '19.3894926', lng => '-99.260309', zoom => 13) }
       Selecciona la opción que más te agrade y realiza tu pedido de inmediato.
     li { data => array(lat => '19.3891928', lng => '-99.2617318') }
       :form url_for::sign_up() { method => PUT, remote => TRUE, type => 'json', id => 'sign' }

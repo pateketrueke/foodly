@@ -1,5 +1,8 @@
 $(function() {
 
+  $.list = [];
+
+
   $('#show').click(function(e) {
     $('#register').lightbox_me({
       centered: true,
@@ -31,32 +34,58 @@ $(function() {
     check();
   });
 
+  $('#locate').submit(function() {
+    var str = $('#query').val();
+
+    if (str) {
+      geocoder.geocode( { 'address': str}, function(results, status) {
+        if (status == google.maps.GeocoderStatus.OK) {
+          clear_marks();
+
+          if (str != results[0].formatted_address) {
+            $('#query').val(results[0].formatted_address);
+          }
+
+          map.setCenter(results[0].geometry.location);
+          set_mark(results[0].geometry.location);
+          setTimeout(load_all, 400);
+        } else {
+          alert("Geocode was not successful for the following reason: " + status);
+        }
+      });
+    }
+  });
+
   function start_canvas(lat, lng) {
-    // position.coords.latitude, position.coords.longitude
-    var latlng = new google.maps.LatLng(lat, lng);
+    origin = new google.maps.LatLng(lat, lng);
+
     var myOptions = {
       zoom: 14,
-      center: latlng,
+      center: origin,
       mapTypeControl: true,
       navigationControlOptions: {},
       mapTypeId: google.maps.MapTypeId.ROADMAP
     };
 
     map = new google.maps.Map(document.getElementById('canvas'), myOptions);
+    set_mark(origin);
+  }
+
+  function set_mark(position) {
     marker = new google.maps.Marker({
-        position: latlng,
+        position: position,
         map: map,
         title: "Tu est\u00e1s aqu\u00ed!"
     });
   }
 
-  /*if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(start_canvas, function() {
-      console.log(arguments);
-    });
-  } else {
-    //$('#list').fadeIn();
-  }*/
+  //if (navigator.geolocation) {
+  //  navigator.geolocation.getCurrentPosition(function(pos) {
+   //     start_canvas(pos.coords.latitude, pos.coords.longitude);
+  //  }, function() {
+      //console.log(arguments);
+  //  });
+//  }
 
   start_canvas(19.3586982, -99.2596767);
 

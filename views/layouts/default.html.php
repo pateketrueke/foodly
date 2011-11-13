@@ -20,21 +20,24 @@
   </head>
   <body>
   <div id="wrapper">
-    <header>    	
+    <header>
     	<img id="logo" alt="<?php echo $title; ?>" src="<?php echo path_to('public/img/logo.png'); ?>">
       <div id="globo">
 		  <div id="join_us">
 		  	<h2>¿Mucha hambre y poco tiempo?</h2>
-		    <h3>Averigua una nueva forma de pedir comida a domicilio</h3>        
+		    <h3>Averigua una nueva forma de pedir comida a domicilio</h3>
 		  </div>
       <img id="triangulo" alt="<?php echo $title; ?>" src="<?php echo path_to('public/img/triangulo.png'); ?>">
-      </div>
+    </div>
   </header>
 <?php echo $body; ?>
 <!-- <?php echo ticks(BEGIN); ?>s -->
   </div>
 
-<div id="social">
+<div id="social"><form action="#locate" id="locate">
+      <div><input type="text" id="query" placeholder="Acopilco Cuajimalpa, Ciudad de México, Tlalpan">
+      <input type="submit" value="Buscar" id="go"></div>
+  </form>
   <a href="http://twitter.com/FoodlyMX">@FoodlyMX</a>
   <a href="http://facebook.com/FoodlyMX">/FoodlyMX</a>
 </div>
