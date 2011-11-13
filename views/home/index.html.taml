@@ -1,7 +1,9 @@
 #canvas
 #display
   :form url_for::sign_up() { method => PUT, :remote => TRUE, type => 'json' }
-    = form::email('addr')
+    = html::h3('Mucha hambre y poco tiempo?')    
+    = form::email('addr'), form::submit('done', 'OK')
+    = html::p('Averigua una nueva forma de pedir comida a domicilio')
 #register
   a { id => 'close_x', class => 'close sprited', href => '#register' }
     (X)

@@ -21,9 +21,10 @@
   <body>
   <div id="wrapper">
     <header>
-      <img alt="<?php echo $title; ?>">
+    	<img alt="<?php echo $title; ?>" src="<?php echo path_to('public/img/logo.png'); ?>">
       <div id="join_us">
-        <button id="show">Mostrar lightbox!</button>
+      	<h2>Directorio de Lugares para ordenar por Internet</h2>
+        <a id="show" href="#show">Registra tu establecimienmto</a>
       </div>
   </header>
 <?php echo $body; ?>

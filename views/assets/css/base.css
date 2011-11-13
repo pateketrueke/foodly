@@ -2,6 +2,11 @@
 @use 'base'
 @use 'css3'
 
+body{
+	background-color:#ffb948;
+}
+
+
 #register {
   @include radius;
   @include shadow;
@@ -12,6 +17,15 @@
 header {
   height: 140px;
 }
+header img{
+	margin-left:10px;
+	margin-top:2px;
+	
+}
+#join_us{
+	float:right;
+}
+	
 
 #map {
   width: 100%;
@@ -30,4 +44,5 @@ header {
   padding: 2em;
   top: 380px;
   left: 87px;
+  color:#fff;
 }
