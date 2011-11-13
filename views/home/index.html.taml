@@ -1,7 +1,7 @@
 #canvas
 #display
   a#close { href => '#close' }
-    (X)
+    img { src => path_to('public/img/cerrar.png') }
   ul
     li
       Bienvenido, sabemos que ésta es tu ubicación actual ¿Estás listo?
@@ -15,7 +15,8 @@
         = form::email('addr'), form::submit('done', 'OK')
         = html::p('Averigua una nueva forma de pedir comida a domicilio')
   a#next { href => '#next' }
-    Siguiente &raquo;
+    
+    img { src => path_to('public/img/siguiente.png') }
 #register
   a#cancel { href => '#cancel' }
     (X)

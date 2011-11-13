@@ -69,7 +69,7 @@ header {
 #display {
   @include radius(15);
   position: relative;
-  background: rgba(#FF6600, .8);
+  background: rgba(#FF0000, .8);
   position: absolute;
   top: 380px;
   left: 87px;
@@ -86,8 +86,8 @@ header {
       list-style-type: none;
     }
   }
-  a#close {
-    position: absolute;
+  a#close {  	
+    position: absolute;   
     right: 10px;
     top: 10px;
   }
