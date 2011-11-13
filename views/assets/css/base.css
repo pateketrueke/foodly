@@ -66,6 +66,7 @@ header {
 
 #display {
   @include radius(15);
+  font-family: 'Rancho', cursive;
   position: relative;
   background: rgba(#FF0000, .8);
   position: absolute;
@@ -95,10 +96,28 @@ header {
     right: 10px;
   }
 }
-
 #twitter{
-	background-image:url('../img/twitter.png');
-	height:30px;
-	width:30px;
+	background: url('../img/twitter.png') no-repeat;
+	display:block;	
+	width:42px;
+	height:46px;
+	float:right;
+	margin-right:50px;
+	margin-top:20px;
+	span{
+		visibility:hidden;
+	}
+}
+#facebook{
+	float:right;
+	background: url('../img/facebook.png') no-repeat;
+	display:block;
+	height:46px;
+	width:46px;
+	margin-right:10px;
+	margin-top:20px;
+	span{
+		visibility:hidden;
+	}
 }
 
