@@ -6,7 +6,7 @@ function mark(lat, lng) {
   marker.setPosition(new google.maps.LatLng(lat, lng));
 }
 
-function initialize(lat, lng, id) {
+function initialize(lat, lng) {
   geocoder = new google.maps.Geocoder();
   var latlng = new google.maps.LatLng(lat, lng);
   var myOptions = {
@@ -14,7 +14,7 @@ function initialize(lat, lng, id) {
     center: latlng,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   }
-  map = new google.maps.Map(document.getElementById(id), myOptions);
+  map = new google.maps.Map(document.getElementById('map'), myOptions);
   marker = new google.maps.Marker({
     map: map,
     position: latlng,
