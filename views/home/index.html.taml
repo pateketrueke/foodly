@@ -10,7 +10,7 @@
     li { data => array(lat => '19.3894926', lng => '-99.260309') }
       Selecciona la opción que más te agrade y realiza tu pedido de inmediato.
     li { data => array(lat => '19.3891928', lng => '-99.2617318') }
-      :form url_for::sign_up() { method => PUT, :remote => TRUE, type => 'json' }
+      :form url_for::sign_up() { method => PUT, remote => TRUE, type => 'json', id => 'sign' }
         = html::h3('¿Mucha hambre y poco tiempo?')
         = form::email('addr'), form::submit('done', 'OK')
         = html::p('Averigua una nueva forma de pedir comida a domicilio')

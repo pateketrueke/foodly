@@ -19,6 +19,14 @@ $(function() {
     }
   })
 
+  $('#sign').bind('ajax:success', function(xhr, data) {
+    if (data.success) {
+      $('#display ul').empty().html('<li style="display:block"><h3>¡Gracias por registrate!</h3></li>');
+    } else {
+      alert('Error?');
+    }
+  })
+
   $('#find').click(function() {
     check();
   });
