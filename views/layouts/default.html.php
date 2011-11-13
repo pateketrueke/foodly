@@ -21,7 +21,10 @@
   <body>
   <div id="wrapper">
     <header>
-      <?php echo $title; ?>!
+      <img alt="<?php echo $title; ?>">
+      <div id="join_us">
+        <button id="show">Mostrar lightbox!</button>
+      </div>
   </header>
 <?php echo $body; ?>
     <footer>

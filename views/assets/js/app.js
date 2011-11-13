@@ -29,4 +29,30 @@ $(function() {
     check();
   });
 
+  function start_canvas(position) {
+    var latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+    var myOptions = {
+      zoom: 15,
+      center: latlng,
+      mapTypeControl: true,
+      navigationControlOptions: {},
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+
+    var map = new google.maps.Map(document.getElementById('canvas'), myOptions);
+    var marker = new google.maps.Marker({
+        position: latlng,
+        map: map,
+        title: "Tu est\u00e1s aqu\u00ed!"
+    });
+  }
+
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(start_canvas, function() {
+      console.log(arguments);
+    });
+  } else {
+    //$('#list').fadeIn();
+  }
+
 });
