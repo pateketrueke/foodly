@@ -36,14 +36,13 @@
 
 <div id="social">
   <a href="http://twitter.com/FoodlyMX">@FoodlyMX</a>
-  <div class="fb-like" data-href="http://foodly.mx/" data-send="false" data-width="450" data-show-faces="false"></div>
+  <a href="http://facebook.com/FoodlyMX">/FoodlyMX</a>
 </div>
 
 <div id="fb-root"></div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
     <script>window.jQuery || document.write("<script src='<?php echo assets::url_for('jquery-1.5.1.min.js'); ?>'>\x3C/script>")</script>
-    <link href='http://fonts.googleapis.com/css?family=Paytone+One' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Rancho' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Paytone+One|Rancho" rel="stylesheet" type="text/css">
     <script src="//maps.google.com/maps/api/js?sensor=false"></script>
 <?php echo assets::after(); ?>
 

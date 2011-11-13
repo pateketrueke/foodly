@@ -14,8 +14,8 @@
         = html::h3('¿Mucha hambre y poco tiempo?')
         = form::email('addr'), form::submit('done', 'OK')
         = html::p('Averigua una nueva forma de pedir comida a domicilio')
+        .fb-like { data => array(href => 'http://foodlyapp.com/', send => 'false', width => 80, show-faces => 'false', layout => 'button_count') }
   a#next { href => '#next' }
-    
     img { src => path_to('public/img/siguiente.png') }
 #register
   a#cancel { href => '#cancel' }
@@ -23,7 +23,7 @@
   :form url_for::save_venue() { method => PUT, remote => TRUE, type => 'json', id => 'venue' }
     = form::field(array(type => 'text', name => 'title', label => 'Titulo'))
     = html::div('', array(id => 'map'))
-    = html::input(array(type => 'text', placeholder => 'Ciudad de México, Tacubaya, Mixquic', id => 'search'))
+    = html::input(array(type => 'text', placeholder => 'Alvaro Obregón, Tacubaya, Mixquic', id => 'search'))
     = html::input(array(type => 'button', id => 'find', value => 'Buscar'))
     = form::field(array(type => 'text', name => 'from', label => 'Desde'), array(type => 'text', name => 'up', label => 'Hasta'))
     = form::field(array(type => 'text', name => 'tel', label => 'Tel.'))
