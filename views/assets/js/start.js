@@ -35,7 +35,7 @@ $(function() {
     // position.coords.latitude, position.coords.longitude
     var latlng = new google.maps.LatLng(lat, lng);
     var myOptions = {
-      zoom: 15,
+      zoom: 14,
       center: latlng,
       mapTypeControl: true,
       navigationControlOptions: {},
