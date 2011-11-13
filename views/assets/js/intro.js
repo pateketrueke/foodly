@@ -15,8 +15,15 @@ $(function() {
     }
 
     var li = steps.eq(current).fadeIn(),
-        lat = li.data('lat'),
-        lng = li.data('lng');
+        lat = li.data('lat') || null,
+        lng = li.data('lng') || null,
+        zoom = li.data('zoom') || null;
+
+    zoom && map.setZoom(zoom);
+
+    if ( ! lat || ! lng) {
+      return;
+    }
 
     var one = new google.maps.Marker({
       map: map,

@@ -34,16 +34,15 @@
 <!-- <?php echo ticks(BEGIN); ?>s -->
   </div>
 
-<footer>	
-  <a id="twitter" href="http://twitter.com/FoodlyMX">LOL</a> 
-  <a id="facebook" href="http://facebook.com/FoodlyMX">  
-</footer>
+<div id="social">
+  <a href="http://twitter.com/FoodlyMX">@FoodlyMX</a>
+  <a href="http://facebook.com/FoodlyMX">/FoodlyMX</a>
+</div>
 
 <div id="fb-root"></div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
     <script>window.jQuery || document.write("<script src='<?php echo assets::url_for('jquery-1.5.1.min.js'); ?>'>\x3C/script>")</script>
-    <link href='http://fonts.googleapis.com/css?family=Paytone+One' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Rancho' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Paytone+One|Rancho" rel="stylesheet" type="text/css">
     <script src="//maps.google.com/maps/api/js?sensor=false"></script>
 <?php echo assets::after(); ?>
 
