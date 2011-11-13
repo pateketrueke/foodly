@@ -1,0 +1,156 @@
+a#close:hover {
+	-webkit-animation: vibrate 10ms linear infinite alternate;
+    -moz-animation: vibrate 10ms linear infinite alternate;
+    -o-animation: vibrate 10ms linear infinite alternate;
+    animation: vibrate 10ms linear infinite alternate;
+  }
+  
+  @-webkit-keyframes vibrate{
+    from {
+        -webkit-transform: rotate(-4deg);
+    }
+    to{
+        -webkit-transform: rotate(4deg);
+    }
+}
+@-moz-keyframes vibrate{
+    from {
+        -moz-transform: rotate(-4deg);
+    }
+    to{
+        -moz-transform: rotate(4deg);
+    }
+}
+@-o-keyframes vibrate{
+    from {
+        -o-transform: rotate(-4deg);
+    }
+    to{
+        -o-transform: rotate(4deg);
+    }
+}
+@keyframes vibrate{
+    from {
+        transform: rotate(-4deg);
+    }
+    to{
+        transform: rotate(4deg);
+    }
+}
+a#next:hover {
+	-webkit-animation: vibrate 10ms linear infinite alternate;
+    -moz-animation: vibrate 10ms linear infinite alternate;
+    -o-animation: vibrate 10ms linear infinite alternate;
+    animation: vibrate 10ms linear infinite alternate;
+  }
+  
+  @-webkit-keyframes vibrate{
+    from {
+        -webkit-transform: rotate(-4deg);
+    }
+    to{
+        -webkit-transform: rotate(4deg);
+    }
+}
+@-moz-keyframes vibrate{
+    from {
+        -moz-transform: rotate(-4deg);
+    }
+    to{
+        -moz-transform: rotate(4deg);
+    }
+}
+@-o-keyframes vibrate{
+    from {
+        -o-transform: rotate(-4deg);
+    }
+    to{
+        -o-transform: rotate(4deg);
+    }
+}
+@keyframes vibrate{
+    from {
+        transform: rotate(-4deg);
+    }
+    to{
+        transform: rotate(4deg);
+    }
+}
+#twitter:hover {
+	-webkit-animation: vibrate 10ms linear infinite alternate;
+    -moz-animation: vibrate 10ms linear infinite alternate;
+    -o-animation: vibrate 10ms linear infinite alternate;
+    animation: vibrate 10ms linear infinite alternate;
+  }
+  
+  @-webkit-keyframes vibrate{
+    from {
+        -webkit-transform: rotate(-4deg);
+    }
+    to{
+        -webkit-transform: rotate(4deg);
+    }
+}
+@-moz-keyframes vibrate{
+    from {
+        -moz-transform: rotate(-4deg);
+    }
+    to{
+        -moz-transform: rotate(4deg);
+    }
+}
+@-o-keyframes vibrate{
+    from {
+        -o-transform: rotate(-4deg);
+    }
+    to{
+        -o-transform: rotate(4deg);
+    }
+}
+@keyframes vibrate{
+    from {
+        transform: rotate(-4deg);
+    }
+    to{
+        transform: rotate(4deg);
+    }
+}
+#facebook:hover {
+	-webkit-animation: vibrate 10ms linear infinite alternate;
+    -moz-animation: vibrate 10ms linear infinite alternate;
+    -o-animation: vibrate 10ms linear infinite alternate;
+    animation: vibrate 10ms linear infinite alternate;
+  }
+  
+  @-webkit-keyframes vibrate{
+    from {
+        -webkit-transform: rotate(-4deg);
+    }
+    to{
+        -webkit-transform: rotate(4deg);
+    }
+}
+@-moz-keyframes vibrate{
+    from {
+        -moz-transform: rotate(-4deg);
+    }
+    to{
+        -moz-transform: rotate(4deg);
+    }
+}
+@-o-keyframes vibrate{
+    from {
+        -o-transform: rotate(-4deg);
+    }
+    to{
+        -o-transform: rotate(4deg);
+    }
+}
+@keyframes vibrate{
+    from {
+        transform: rotate(-4deg);
+    }
+    to{
+        transform: rotate(4deg);
+    }
+}

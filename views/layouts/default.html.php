@@ -34,13 +34,10 @@
 <!-- <?php echo ticks(BEGIN); ?>s -->
   </div>
 
-<div id="social"><form action="#locate" id="locate">
-      <div><input type="text" id="query" placeholder="Acopilco Cuajimalpa, Ciudad de México, Tlalpan">
-      <input type="submit" value="Buscar" id="go"></div>
-  </form>
-  <a href="http://twitter.com/FoodlyMX">@FoodlyMX</a>
-  <a href="http://facebook.com/FoodlyMX">/FoodlyMX</a>
-</div>
+<footer>
+  <a id="twitter" href="http://twitter.com/FoodlyMX"><span>@FoodlyMX</span></a>
+  <a id="facebook" href="http://facebook.com/FoodlyMX"><span>FoodlyMX</span></a>
+<footer>
 
 <div id="fb-root"></div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
