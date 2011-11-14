@@ -1,4 +1,4 @@
-/* 2011-11-13 23:37:04 ./foodly/views/assets/css/base.css */
+/* 2011-11-14 06:17:56 ./foodly/views/assets/css/base.css */
 a#close:hover {
  -webkit-animation: vibrate 10ms linear infinite alternate;
  -moz-animation: vibrate 10ms linear infinite alternate;
@@ -190,7 +190,7 @@ header {
 }
 #triangulo {
  position: absolute;
- left: 45%;
+ right: 33%;
  bottom: -13px;
 }
 #map {
@@ -214,7 +214,7 @@ header {
 #display ul li h3 {
  width: 300px;
  font-family: 'Rancho',cursive;
- font-size: 1.7em;
+ font-size: 1.4em;
  position: absolute;
  margin-top: -20px;
  margin-left: 4px;
@@ -288,6 +288,8 @@ header {
 }
 .fb-like {
  float: right;
+ width: 80px;
+ overflow: hidden;
  margin-top: -24px;
  margin-left: 45px;
 }
