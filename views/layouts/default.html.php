@@ -24,7 +24,7 @@
     	<img id="logo" alt="<?php echo $title; ?>" src="<?php echo path_to('public/img/logo.png'); ?>">
       <div id="globo">
 		  <div id="join_us">
-		  	<h2>¿Mucha hambre y poco tiempo?</h2>
+		  	<h2>¿Sin tiempo para salir o prefieres ordenar?</h2>
 		    <h3>Averigua una nueva forma de pedir comida a domicilio</h3>
 		  </div>
       <img id="triangulo" alt="<?php echo $title; ?>" src="<?php echo path_to('public/img/triangulo.png'); ?>">

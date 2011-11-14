@@ -59,7 +59,7 @@ $(function() {
       $('#next').fadeOut();
     }
 
-    var li = steps.eq(current).fadeIn(),
+    var li = steps.eq(current).fadeIn(); /*,
         lat = li.data('lat') || null,
         lng = li.data('lng') || null,
         zoom = li.data('zoom') || null;
@@ -78,7 +78,7 @@ $(function() {
     });
 
     $.list.push(one);
-    map.setCenter(one.getPosition());
+    map.setCenter(one.getPosition());*/
     steps.not(':eq(' + current + ')').fadeOut();
   }
 

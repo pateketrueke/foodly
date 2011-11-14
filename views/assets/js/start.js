@@ -79,14 +79,11 @@ $(function() {
     });
   }
 
-  //if (navigator.geolocation) {
-  //  navigator.geolocation.getCurrentPosition(function(pos) {
-   //     start_canvas(pos.coords.latitude, pos.coords.longitude);
-  //  }, function() {
-      //console.log(arguments);
-  //  });
-//  }
-
-  start_canvas(19.3586982, -99.2596767);
-
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(pos) {
+        start_canvas(pos.coords.latitude, pos.coords.longitude);
+    }, function() {
+        start_canvas(19.3586982, -99.2596767);
+    });
+  }
 });

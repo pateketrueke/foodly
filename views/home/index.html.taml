@@ -4,18 +4,15 @@
     img { src => path_to('public/img/cerrar.png') }
   ul
     li
-      h3 Bienvenido 
-      p Sabemos que ésta es tu ubicación actual ¿Estás listo?
-    li { data => array(lat => '19.3872761', lng => '-99.25227710000001', zoom => 13) }
-      h3 Aquí puedes
-      p Descubrir las opciones cercanas a ti para comer sin desplazarte de tu lugar.
-    li { data => array(lat => '19.3894926', lng => '-99.260309') }
-      h3 Selecciona 
-      p la opción que más te agrade y realiza tu pedido de inmediato.
-    li { data => array(lat => '19.3891928', lng => '-99.2617318') }
+      h3 ¿Conoces los establecimientos de comida con servicio a domicilio de tu comunidad?
+    li
+      h3 ¿Te gustaría tener siempre disponible una lista de estos negocios a tu al rededor?
+    li
+      h3 La opción sería tener muchos folletos o usar Foodly ¿Te interesaría conocer nuestro servicio?
+    li
       :form url_for::sign_up() { method => PUT, remote => TRUE, type => 'json', id => 'sign' }
-        = html::h3('Averigua una nueva forma de pedir comida a domicilio')
-        = form::email('addr', '', array(placeholder => 'tu@correo.com')), form::submit('done', 'OK')        
+        = html::h3('Inscribete y se uno de los primeros en disfrutar de ésta aplicación.')
+        = form::email('addr', '', array(placeholder => 'tu@correo.com')), form::submit('done', 'OK')
         .fb-like { data => array(href => 'http://foodlyapp.com/', send => 'false', width => 80, show-faces => 'false', layout => 'button_count') }
   a#next { href => '#next' }
     img { src => path_to('public/img/siguiente.png') }

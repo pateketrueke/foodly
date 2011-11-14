@@ -48,7 +48,7 @@ header {
 }
 #triangulo{
 	position: absolute;
-	left: 45%;
+	right: 33%;
 	bottom: -13px;
 }
 
@@ -97,7 +97,7 @@ header {
     	h3{
     		width:300px;
     		font-family: 'Rancho', cursive;
-			font-size:1.7em;
+			font-size:1.4em;
 			position: absolute;
 			margin-top:-20px;
 			margin-left:4px;
@@ -146,6 +146,8 @@ header {
 }
 .fb-like{
 	float:right;
+  width: 80px;
+  overflow:hidden;
 	margin-top:-24px;
 	margin-left:45px;
 }
