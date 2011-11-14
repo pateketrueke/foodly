@@ -7,10 +7,13 @@ class home_controller extends base_controller
     import('form');
     import('html');
 
-    if (request::get('migrate')) {
+    if (request::get('insights')) {
     import('db');
-    require getcwd().DS.'database'.DS.'schema'.EXT;
-      redirect();
+    import('a_record');
+    dump(costumers::all(), 1);
+    exit;
+    #require getcwd().DS.'database'.DS.'schema'.EXT;
+    #  redirect();
     }
   }
 
