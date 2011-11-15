@@ -24,3 +24,5 @@ Team
  - @pateketrueke Backend developer
 
 > Si te interesa el proyecto no dudes en seguir a @FoodlyMX en Twitter para recibir u ofrecer información.
+
+> Visita el sitio de producción: www.foodlyapp.com Gracias por el feedback 
