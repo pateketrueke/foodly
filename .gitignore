@@ -3,3 +3,6 @@ public/css/all.css
 public/js/all.js
 logs/*
 tmp/*
+access.log
+error.log
+.develop

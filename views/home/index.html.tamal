@@ -1,3 +1,5 @@
+- stylesheet_for('app')
+- javascript_for('app')
 #canvas
 #display
   a#close { href => '#close' }
@@ -10,7 +12,7 @@
     li
       h3 La opción sería tener muchos folletos o usar Foodly ¿Te interesaría conocer nuestro servicio?
     li
-      :form url_for::sign_up() { method => PUT, remote => TRUE, type => 'json', id => 'sign' }
+      = form::put_remote(url_for::sign_up(), ~>
         = html::h3('Inscribete y se uno de los primeros en disfrutar de ésta aplicación.')
         = form::email('addr', '', array(placeholder => 'tu@correo.com')), form::submit('done', 'OK')
         .fb-like { data => array(href => 'http://foodlyapp.com/', send => 'false', width => 80, show-faces => 'false', layout => 'button_count') }
@@ -19,7 +21,7 @@
 #register
   a#cancel { href => '#cancel' }
     (X)
-  :form url_for::save_venue() { method => PUT, remote => TRUE, type => 'json', id => 'venue' }
+  = form::put_remote(url_for::save_venue(), ~>
     = form::field(array(type => 'text', name => 'title', label => 'Titulo'))
     = html::div('', array(id => 'map'))
     = html::input(array(type => 'text', placeholder => 'Alvaro Obregón, Tacubaya, Mixquic', id => 'search'))

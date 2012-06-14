@@ -8,7 +8,7 @@ function load_all() {
 
   var here = marker.getPosition().lat() + ',' + marker.getPosition().lng();
 
-  $.getJSON('/venues/near', { at: here }, function(data) {
+  $.getJSON('<?php echo url_for('/venues/near'); ?>', { at: here }, function(data) {
     if (data.response.groups) {
       var items = data.response.groups[0].items,
           max = items.length,

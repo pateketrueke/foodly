@@ -11,23 +11,21 @@
 
     <title><?php echo $title; ?></title>
 
-<?php echo assets::tag_for('http://fonts.googleapis.com/css?family=Bangers', 'css'); ?>
-<?php echo assets::tag_for('modernizr-1.7.min.js'); ?>
-<?php echo assets::favicon(); ?>
-<?php echo assets::before(); ?>
 <?php echo $head; ?>
+<?php echo before_body(); ?>
+<?php echo tag_for('lib/modernizr-2.0.6.min.js'); ?>
 
   </head>
   <body>
   <div id="wrapper">
     <header>
-    	<img id="logo" alt="<?php echo $title; ?>" src="<?php echo path_to('public/img/logo.png'); ?>">
+      <?php echo image_tag('logo.png', $title, array('id' => 'logo')); ?>
       <div id="globo">
 		  <div id="join_us">
 		  	<h2>¿Sin tiempo para salir o prefieres ordenar?</h2>
 		    <h3>Averigua una nueva forma de pedir comida a domicilio</h3>
 		  </div>
-      <img id="triangulo" alt="<?php echo $title; ?>" src="<?php echo path_to('public/img/triangulo.png'); ?>">
+      <?php echo image_tag('triangulo.png', $title, array('id' => 'triangulo')); ?>
     </div>
     <form action="#locate" id="locate">
       <div><input type="text" id="query" placeholder="Acopilco Cuajimalpa, Ciudad de México, Tlalpan">
@@ -45,10 +43,10 @@
 
 <div id="fb-root"></div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write("<script src='<?php echo assets::url_for('jquery-1.5.1.min.js'); ?>'>\x3C/script>")</script>
+    <script>window.jQuery || document.write("<script src='<?php echo asset_url('lib/jquery-1.5.1.min.js', 'js'); ?>'>\x3C/script>")</script>
     <link href="http://fonts.googleapis.com/css?family=Paytone+One|Rancho" rel="stylesheet" type="text/css">
     <script src="//maps.google.com/maps/api/js?sensor=false"></script>
-<?php echo assets::after(); ?>
+<?php echo after_body(); ?>
 
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];

@@ -1,8 +1,6 @@
-@require 'frames'
-
-@use 'reset'
-@use 'base'
-@use 'css3'
+@use reset
+@use base
+@use css3
 
 body{
 	background-color:#ffb948;

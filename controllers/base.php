@@ -1,5 +1,5 @@
 <?php
 
-class base_controller extends app_controller {
+class base_controller extends application {
   public static $title = 'Foodly';
 }

@@ -143,11 +143,13 @@
     all_fields: function(el, blank) {
       var out = [];
 
-      el.find('input:not([type=submit]),textarea').each(function() {
-        var input = $(this);
+      el.find('input,select,textarea').each(function() {
+        var field = $(this),
+            value = field.val(),
+            required = !! field.data('required');
 
-        if (blank ? ! input.val() : input.val()) {
-          out.push(input);
+        if (required && (blank ? ! value : value)) {
+          out.push(field.addClass('error'));
         }
       });
 
